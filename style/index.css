@@ -87,18 +87,15 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/* border: 2px solid black; */
 }
 * {
 	box-sizing: border-box;
 }
-html {
-	border: 1px solid white;
-}
+
 body {
 	font-family: 'Yusei Magic', sans-serif;
-	background-color: #333;
-	/* flex-direction: column; */
-	/* justify-content: center; */
+	background-color: #999;
 }
 .flex {
 	display: flex;
@@ -109,24 +106,52 @@ body {
 }
 header {
 	justify-content: space-between;
+	margin-bottom: 10px;
 }
 .header-logo {
 	font-size: 4rem;
 	align-items: center;
+	padding-left: 20px;
 }
 nav {
-	width: 30%;
+	width: 35%;
 	justify-content: space-evenly;
 	align-items: center;
 }
-nav a {
-	color: #eee;
+.nav-tab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+	width: 150px;
+	background-color: #eee;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+.nav-tab a {
+	color: #333;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
-nav a:visited {
-	color: #eee;
+.nav-tab a:visited {
+	color: #333;
 }
+/* .nav-tab a:target {
+	background-color: #333;
+	color: white;
+} */
+.home {
+	background-color: #333;
+	color: white;
+	border: 2px white;
+}
+.home a {
+	color: white;
+}
+.home a:visited {
+	color: white;
+}
+
 .hero-section-container {
 	justify-content: center;
 }
@@ -153,7 +178,7 @@ div.hero-image button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 55px;
+	height: 65px;
 	width: 220px;
 	font-size: 2rem;
 	background-color: #333;
@@ -171,53 +196,82 @@ div.hero-image button {
 .gallery {
 	display: flex;
 	margin-top: 100px;
-	width: 95%;
-	height: 1000px;
-	justify-content: space-between;
+	width: 100%;
+	height: 1500px;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	align-content: space-around;
 }
 .gallery-card {
-	background-color: #555;
+	/* background-color: #555; */
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 25vw;
-	height: 400px;
+	width: 600px;
+	height: 675px;
 }
 .gallery-card h3 {
-	color: #eee;
+	color: #333;
+
 	font-size: 2rem;
 }
 .gallery-image {
 	border-radius: 10px;
-	height: 300px;
-	width: 300px;
+	height: 600px;
+	width: 600px;
 	justify-content: center;
 }
 .image {
 	border-radius: 10px;
-	height: 300px;
-	width: 300px;
-	background-size: cover;
+	height: 600px;
+	width: 600px;
 }
 .image-1 {
 	background: url(https://picsum.photos/id/515/200);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .image-2 {
 	background: url(https://picsum.photos/id/547/200);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .image-3 {
 	background: url(https://picsum.photos/id/87/200);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .image-4 {
 	background: url(https://picsum.photos/id/78/200);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .image-5 {
 	background: url(https://picsum.photos/id/98/200);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .image-6 {
 	background: url(https://picsum.photos/id/49/200);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+footer {
+	background-color: #777;
+	width: 100%;
+	height: 250px;
+	justify-content: center;
+	align-items: center;
+}
+footer button {
+	font-size: 1.5rem;
+	height: 50px;
+	width: 175px;
+	color: #333;
+	background: #eee;
+	border: none;
+	border-radius: 2px;
 }
