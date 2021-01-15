@@ -106,7 +106,8 @@ body {
 }
 header {
 	justify-content: space-between;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	/* position: fixed; */
 }
 .header-logo {
 	font-size: 4rem;
@@ -127,6 +128,16 @@ nav {
 	background-color: #eee;
 	border: 2px solid black;
 	border-radius: 3px;
+}
+.nav-tab:hover {
+	/* color: #eee; */
+	background-color: #555;
+}
+.nav-tab:hover a {
+	color: #ccc;
+}
+.nav-tab:hover a:visited {
+	color: #ccc;
 }
 .nav-tab a {
 	color: #333;
@@ -165,7 +176,7 @@ nav {
 .hero-image {
 	display: flex;
 	width: 100%;
-	background: url(https://picsum.photos/id/48/300/200);
+	background: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -178,17 +189,26 @@ div.hero-image button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 65px;
-	width: 220px;
-	font-size: 2rem;
+	height: 100px;
+	width: 320px;
+	font-size: 3rem;
 	background-color: #333;
-	color: white;
+	color: #ccc;
 	border: none;
 	border-radius: 20px;
 	text-shadow: 2px 2px #000;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
 	font-family: 'Yusei Magic', sans-serif;
 	outline: none;
+	cursor: pointer;
+}
+
+div.hero-image a {
+	text-decoration: none;
+}
+div.hero-image a:hover button {
+	background-color: #ccc;
+	color: #333;
 }
 .gallery-section-container {
 	justify-content: center;
@@ -229,32 +249,38 @@ div.hero-image button {
 	width: 600px;
 }
 .image-1 {
-	background: url(https://picsum.photos/id/515/200);
+	background: url(https://images.unsplash.com/photo-1553531888-a5892402adce?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+	/* background: url(https://picsum.photos/id/515/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .image-2 {
-	background: url(https://picsum.photos/id/547/200);
+	background: url(https://images.unsplash.com/photo-1524168948265-8f79ad8d4e33?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
+	/* background: url(https://picsum.photos/id/547/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .image-3 {
-	background: url(https://picsum.photos/id/87/200);
+	background: url(https://images.unsplash.com/photo-1506729623306-b5a934d88b53?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
+	/* background: url(https://picsum.photos/id/87/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .image-4 {
-	background: url(https://picsum.photos/id/78/200);
+	background: url(https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=800);
+	/* background: url(https://picsum.photos/id/78/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .image-5 {
-	background: url(https://picsum.photos/id/98/200);
+	background: url(https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=800);
+	/* background: url(https://picsum.photos/id/98/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .image-6 {
-	background: url(https://picsum.photos/id/49/200);
+	background: url(https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=800);
+	/* background: url(https://picsum.photos/id/49/200); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -274,4 +300,5 @@ footer button {
 	background: #eee;
 	border: none;
 	border-radius: 2px;
+	cursor: pointer;
 }
