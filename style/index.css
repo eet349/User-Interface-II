@@ -132,7 +132,6 @@ nav {
 	transition: 0.3s;
 }
 .nav-tab:hover {
-	/* color: #eee; */
 	background-color: #555;
 }
 .nav-tab:hover a {
@@ -149,10 +148,7 @@ nav {
 .nav-tab a:visited {
 	color: #333;
 }
-/* .nav-tab a:target {
-	background-color: #333;
-	color: white;
-} */
+
 .home {
 	background-color: #333;
 	color: white;
